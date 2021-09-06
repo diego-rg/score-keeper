@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <main>
+        <div class="container container--main-centered">
+            <h1>Score Keeper</h1>
+            <div class="container container--image-small">
+                <img class="image image--main-small" src="/images/abaco.png" title="Several math related items." alt="Colourful hand-drawn picture of several items related to maths.">
+            </div>
+            <p class="paragraph paragraph--score">
+                <span id="player-one-score">0</span> to <span id="player-two-score">0</span>
+            </p>
+            <p class="paragraph paragraph--instructions">
+                Select the winning puntuation and use the buttons to keep the score and reset it.
+            </p>
+            <form class="form form--winningScore">
+                <label for="winningScore">Playing to:</label>
+                    <select id="winningScore" name="winningScore">
+                        <option value="5">5</option>
+                        <option value="7">7</option>
+                        <option value="10">10</option>
+                    </select>
+            </form>
+            <br>
+            <div class="container container--buttons">
+                <button type="button" class="button button--green">+1 to player One</button>
+                <button type="button" class="button button--blue">+1 to player Two</button>
+                <button type="button" class="button button--red">Reset game</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js.js"></script>
+</body>
+</html>
