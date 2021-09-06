@@ -20,7 +20,7 @@ playerTwoPoint.addEventListener("click", addPointsTwo);
 function addPointsTwo() {
     playerTwoScore.innerText = parseInt(document.querySelector("#player-two-score").innerText) + 1;
     if (playerTwoScore.innerText == winningScoreValue.value) {
-        alert("Player One wins! Reset to start a new game.");
+        alert("Player Two wins! Reset to start a new game.");
     }
 }
 
